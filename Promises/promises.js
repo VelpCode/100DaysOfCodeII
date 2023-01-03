@@ -1,4 +1,4 @@
-import {wait} from "./helpers.js";
+import {wait} from "helpers.js";
 
 const init = () => {
     console.log("Program starterd");
