@@ -6,4 +6,9 @@ const wait = milliseconds => {
     });
 }
 
-console.log(wait(1000));
+const result = wait(1000)
+console.log(result); //Promise {<pending>}
+result.then(() => {
+    console.log(result); //Promise {fulfilled}
+})
+console.log(result);
