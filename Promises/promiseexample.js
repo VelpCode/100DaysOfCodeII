@@ -20,3 +20,8 @@ let fetchSomeData = new Promise((resolve, reject) => {
 })
 
 //consuming a promise
+fetchSomeData.then(fetchedData => {
+    console.log('then', fetchedData)
+}).catch(err => {
+    console.error('catch:', err);
+})
