@@ -29,4 +29,6 @@ let echoData = function(data) {
     })
 }
 
-fetchData().then(parseData).then(echoData);
+fetchData().then(parseData).then(echoData).catch(err => {
+    console.error(err);
+});
