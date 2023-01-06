@@ -10,9 +10,30 @@ For all other endpoints, it should return a promise that fails. You can also pas
 const fakeFetch = (endpoint) => {
 
     return new Promise((resolve, reject) => {
-        
+        if(endpoint !== "flight-status") {
+            reject("endpoint not supported")
+        }
+        setTimeout(() => {
+            resolve({
+                delayed: true,
+                departed: false
+            })
+        }, 1000)
 
 
     })
 
 }
+
+fakeFetch("flight-status")
+    .then((data) => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error(error)
+    })
+
+fakeFetch("user-details")
+    .then((data) => {
+        console.error(error)
+    });
