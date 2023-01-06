@@ -1,39 +1,18 @@
-/*Complete the fakeFetch(endpoint) function such that:
+/*Implement the function failAfter(milliseconds) that returns a promise and fails after milliseconds have elapsed.
+It should fail with the following message: "You asked me to fail after Xms and I did!" where X is replaced by milliseconds.
+*/
 
-When the endpoint is "flight-status", it should return a promise that resolves successfully after 1 second with the following object:
-{
-    departed: false,
-    delayed: true
-}
-For all other endpoints, it should return a promise that fails. You can also pass an error message such as: "endpoint not supported.".*/
+const failAfter = (milliseconds) => {
 
-const fakeFetch = (endpoint) => {
-
-    return new Promise((resolve, reject) => {
-        if(endpoint !== "flight-status") {
-            reject("endpoint not supported")
-        }
+    return new Promise((resolve,reject) => {
         setTimeout(() => {
-            resolve({
-                delayed: true,
-                departed: false
-            })
-        }, 1000)
-
-
+            reject(`You asked me to fail after ${milliseconds}ms and I did!`)
+        },milliseconds)
     })
+
 
 }
 
-fakeFetch("flight-status")
-    .then((data) => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error(error)
-    })
-
-fakeFetch("user-details")
-    .then((data) => {
-        console.error(error)
-    });
+failAfter(1500).catch(error => {
+    console.error(error);
+})
