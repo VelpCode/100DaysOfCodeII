@@ -1,5 +1,5 @@
 
-let allGood = true;
+let allGood = false;
 
 //Define a promise
 //Pending | hasn't settled to a value
