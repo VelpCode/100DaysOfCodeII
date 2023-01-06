@@ -12,14 +12,16 @@ const fakeFetch = () => {
     return new Promise(resolve => {
         setTimeout(() => {
             const fitch = {
-                departed 
+                departed: false,
+                delayed: true
             }
-        })
+            resolve(fitch);
+        },1000)
     })
 
 
 }
 
-fakeFetch().then(() => {
+fakeFetch().then((data) => {
     console.log(data);
 })
