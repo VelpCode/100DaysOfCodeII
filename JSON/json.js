@@ -1,17 +1,21 @@
 
-/*Will it rain?
-This willItRain function receives a JSON string from a fictive weather API.
-Complete the willItRain function such that it returns true when the weather forecast predicts that it'll rain and false otherwise.
-*/ 
+/*The prepareStatus function is called before sending a status on a social network.
+Complete the prepareStatus function such that it returns a string of the data that's going to be sent, containing the userId, status, and location.
+*/
 
-const willItRain = weatherApiResponse => {
 
-    const data = JSON.parse(weatherApiResponse);
-    return data.now.rainExpected;
-    
+const prepareStatus = (status, location) => {
+    const userId = 42;
+    const data = {
+        userId,
+        status,
+        location
+    }
 
+    const dummytrial = JSON.stringify(data)
+    return dummytrial;
 
 }
 
-console.log(willItRain('{"now":{"temperature":18,"humidity":"30%","uvIndex":0,"rainExpected":true}}')); 
-console.log(willItRain('{"now":{"temperature":25,"humidity":"90%","uvIndex":4,"rainExpected":false}}')); // false
+console.log(prepareStatus("My first post!", "Amsterdam"));
+console.log(prepareStatus("Hello World!", "Berlin"));
