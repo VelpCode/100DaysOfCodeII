@@ -4,18 +4,7 @@ Complete the prepareStatus function such that it returns a string of the data th
 */
 
 
-const prepareStatus = (status, location) => {
-    const userId = 42;
-    const data = {
-        userId,
-        status,
-        location
-    }
-
-    const dummytrial = JSON.stringify(data)
-    return dummytrial;
+function showNewNotifications(conunt) {
+    console.log(`You have ${count} new notifications. Would you like to read them?`)
 
 }
-
-console.log(prepareStatus("My first post!", "Amsterdam"));
-console.log(prepareStatus("Hello World!", "Berlin"));
