@@ -9,6 +9,8 @@ const checkForNewNotifications = () => {
     .then(result => result.json())
     .then(data => {
         showNewNotifications(data.count)
+    }).catch(error => {
+        console.error(error)
     })
 
 
