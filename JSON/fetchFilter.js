@@ -8,7 +8,7 @@ const checkForNewNotifications = () => {
     fetch(`https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json`)
     .then(result => result.json())
     .then(data => {
-        console.log(data)
+        showNewNotifications(data.count)
     })
 
 
