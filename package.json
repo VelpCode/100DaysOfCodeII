@@ -1,0 +1,21 @@
+{
+  "name": "100daysofcodeii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VelpCode/100DaysOfCodeII.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VelpCode/100DaysOfCodeII/issues"
+  },
+  "homepage": "https://github.com/VelpCode/100DaysOfCodeII#readme"
+}
