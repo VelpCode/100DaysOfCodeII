@@ -4,7 +4,10 @@ const API = new FetchWrapper("https://jsdemo-3f387-default-rtdb.europe-west1.fir
 
 export const getWeather = city => {
 
-    API.get()
+    API.get(`/weatherstack/${city}.json`).then(data => {
+        console.log(data)//visualize obj
+        showTemperature(data.current.temperature)
+    })
 
 
 }
