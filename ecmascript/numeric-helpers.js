@@ -1,4 +1,4 @@
-
+ `````````````````````` `   1                         `
 export default class NumericHelper {
     constructor(number) {
         this.number = number
