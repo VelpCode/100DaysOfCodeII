@@ -15,7 +15,7 @@ let fetchSomeData = new Promise((resolve, reject) => {
             id: 1,
             message: 'nice work!'
         })
-    }
+    }FileSystemHandle.CATCHERROR(!ALLgOod)
 
 })
 
