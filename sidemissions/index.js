@@ -1,6 +1,7 @@
 import FetchWrapper from "./fetch-wrapper.js";
 
-const API = new FetchWrapper("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app")
+const API = new FetchWrapper("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app");
+
 const getTweetDetails = () => {
 
     API.get('tweetspecified.json').then(data => {
@@ -22,3 +23,11 @@ function showAuthorName(fullName) {
 }
 
 getTweetDetails();
+
+
+const paras = document.querySelectorAll("p")
+
+return [...paras].filter(para => para.textContent.length < 10 )
+
+
+
