@@ -1,0 +1,61 @@
+:root {
+    --white: #fff;
+    --black: #000;
+  
+    --primary-1: #c47e35;
+    --primary-2: #dca15d;
+    --primary-3: #dabb94;
+    --primary-4: #f3dabc;
+    --primary-5: #faf1e5;
+  
+    --neutral-1: #2c2c2c;
+    --neutral-2: #434343;
+    --neutral-3: #94868b;
+    --neutral-4: #d9cfd3;
+    --neutral-5: #f2ecee;
+  
+    --accent-1: #458179;
+    --accent-2: #4da296;
+    --accent-3: #8dd8cf;
+    --accent-4: #92cfc7;
+    --accent-5: #d7f2ef;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 50px 0 30px 0;
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  a {
+    color: var(--primary-2);
+    text-decoration: underline;
+    line-height: 1.4;
+    padding: 0.25em;
+  }
+
+  .btn {
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    max-width: 120px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 220ms, transform 220ms;
+    border: none;
+  }
+
+  .btn:active {
+    transform: translate(0.8px, 0.8px);
+  }
