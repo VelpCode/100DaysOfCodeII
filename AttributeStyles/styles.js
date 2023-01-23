@@ -15,9 +15,7 @@ const showOrHideConsent = user => {
         randomVar.style.display = "none";
     }
 
-
 }
-
 
 
 showOrHideConsent({
