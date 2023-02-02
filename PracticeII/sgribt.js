@@ -11,3 +11,5 @@ const initDocumentation = () => {
 
 
 }
+
+initDocumentation()
