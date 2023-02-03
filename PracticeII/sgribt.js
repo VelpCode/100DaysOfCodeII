@@ -1,16 +1,17 @@
 
 
-const initDocumentation = () => {
+const disableFunc = () => {
 
-    const docu = document.querySelector("#menu-sidebar");
-    const ment = document.querySelector("#app-sidebar");
+    const disable = document.querySelector("#btn-disable")
+    const enable = document.querySelector("#btn-enable")
+    const start = document.querySelector("#btn-start")
 
-    docu.addEventListener("click", () => {
-        ment.classList.toggle("show");
+    disable.addEventListener("click", () => {
+        start.setAttribute("disabled", "disabled")
     })
 
+    enable.addEventListener("click", () => {
+        start.removeAttribute("disabled")
+    })
 
 }
-
-
-initDocumentation()
