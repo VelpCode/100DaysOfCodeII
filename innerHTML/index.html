@@ -8,9 +8,24 @@
     <link rel = "stylesheet" href = "styles.css">
 </head>
 <body>
-    <div id = "test">This is a sample text</div>
-    If you want the HTML string to be rendered and interpreted as a HTML by the browser,
-    you then have to use the innerHTML property:
-    element.innerHTML = "<strong>This will be Bold</strong>"
+    <nav id = "navbar">
+        <a href = "" class = "nab-brand">App</a>
+        <ul>
+            <li class = "nav-item"><a href = "about.html">About us</a></li>
+            <li><a href = "" class = "nav-item btn btn-default">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class = "container" id = "main">
+        <h1>Welcome to our app</h1>
+        <p>Lorem ipsum</p>
+        <p id = "welcome-message">
+            Welcome to your <strong>beautiful</strong> website!
+        </p>
+    </div>
+    <footer id = "footer-wrapper">
+        <a href = "about.html" target = "_blank">About us</a>
+        <a href = "contact.html" target = "_blank">Contact us</a>
+    </footer>
 </body>
 </html>
