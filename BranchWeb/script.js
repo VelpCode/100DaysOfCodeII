@@ -1,7 +1,16 @@
 
 
-const bubble = document.querySelector("#buttopig");
+const setWelcomeMessage = name => {
 
-bubble.addEventListener("click", () => {
-    console.log("button clicked")
-})
+    button = document.querySelector("#buttopig")
+    button.addEventListener("click", () => {
+        document.querySelector("#enter-message").innerHTML = "<strong>This is the message I chose to enter</strong>"
+    })
+}
+
+
+
+
+
+setWelcomeMessage("Daarla")
+setWelcomeMessage("phrabu")
