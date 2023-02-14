@@ -9,7 +9,14 @@ const setWelcomeMessage = name => {
     })
 }
 
+const banner = document.querySelector("#banner");
+banner.getAttribute("id");
+banner.getAttribute("disabled");
 
+const button = document.querySelector("#login");
+button.getAttribute("disbaled")
+button.removeAttribute("disabled")
+button.setAttribute("id", "navbar")
 
 
 
