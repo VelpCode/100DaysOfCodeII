@@ -18,7 +18,9 @@ button.getAttribute("disbaled")
 button.removeAttribute("disabled")
 button.setAttribute("id", "navbar")
 
-
+const positions = document.querySelector("#job-positions");
+positions.insertAdjacentHTML("afterbegin", `<div class = "position">2015-2020</div>`)
+positions.insertAdjacentHTML("beforeend", `<div class = "positiontwo">Amma Nana</div>`)
 
 
 setWelcomeMessage("Daarla")
