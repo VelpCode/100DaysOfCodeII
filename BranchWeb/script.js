@@ -27,6 +27,10 @@ positions.insertAdjacentHTML("beforeend", `div class = "document">Documentation<
 positions.insertAdjacentHTML("afterbegin", 'div class = "document">Documentation 2 </div>')
 
 
+const docuSelector = document.querySelector("main");
+docuSelector.insertAdjacentHTML("beforeend", `div class = "selector">DocumentationScript</div>`)
+docuSelector.insertAdjacentHTML("afterbegin", `div class = "strong">Strong selector</div>`)
+
 
 
 
