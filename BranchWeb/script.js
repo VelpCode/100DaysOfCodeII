@@ -22,6 +22,13 @@ const positions = document.querySelector("#job-positions");
 positions.insertAdjacentHTML("afterbegin", `<div class = "position">2015-2020</div>`)
 positions.insertAdjacentHTML("beforeend", `<div class = "positiontwo">Amma Nana</div>`)
 
+const discontinue = document.querySelector("#job-positions");
+positions.insertAdjacentHTML("beforeend", `div class = "document">Documentation</div>`)
+positions.insertAdjacentHTML("afterbegin", 'div class = "document">Documentation 2 </div>')
+
+
+
+
 
 setWelcomeMessage("Daarla")
 setWelcomeMessage("phrabu")
