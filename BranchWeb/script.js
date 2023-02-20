@@ -36,3 +36,4 @@ const handleClick = () => {
 
 fatbutton.addEventListener("click", handleClick);
 
+fatbutton.removeEventListener("click", handleClick);
