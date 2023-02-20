@@ -35,7 +35,7 @@ const createBanner = document.querySelector("#main");
 createBanner = insertAdjacentHTML(`beforeend`, `<div class = "selector">Documentation three</div>`)
 createBanner = insertAdjacentHTML(`afterbegin`, `<div class = "selector">Formatting error</div>`);
 
-
+const davidbut = document.querySelector("#david")
 
 
 setWelcomeMessage("Daarla")
