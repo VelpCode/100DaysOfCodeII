@@ -36,4 +36,6 @@ const handleClick = () => {
 
 fatbutton.addEventListener("click", handleClick);
 
-fatbutton.removeEventListener("click", handleClick);
+setTimeout(() => {
+    fatbutton.removeEventListener("click", handleClick);
+}, 1500)
