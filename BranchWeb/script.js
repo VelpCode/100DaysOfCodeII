@@ -36,7 +36,9 @@ createBanner = insertAdjacentHTML(`beforeend`, `<div class = "selector">Document
 createBanner = insertAdjacentHTML(`afterbegin`, `<div class = "selector">Formatting error</div>`);
 
 const davidbut = document.querySelector("#david")
-
+davidbut.addEventListener("click", event => {
+    console.log(davidbut.textContent)
+})
 
 setWelcomeMessage("Daarla")
 setWelcomeMessage("phrabu")
