@@ -26,5 +26,5 @@ const davidbut = document.querySelector("#david")
 davidbut.addEventListener("click", event => {
     console.log(davidbut.textContent)
 }, {
-    once: false
+    once: true
 })
