@@ -28,3 +28,11 @@ davidbut.addEventListener("click", event => {
 }, {
     once: true
 })
+
+const fatbutton = document.querySelector("#big-fat")
+const handleClick = () => {
+    console.log(event.currentTarget.textContent);
+}
+
+fatbutton.addEventListener("click", handleClick);
+
