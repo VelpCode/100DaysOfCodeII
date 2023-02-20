@@ -38,6 +38,8 @@ createBanner = insertAdjacentHTML(`afterbegin`, `<div class = "selector">Formatt
 const davidbut = document.querySelector("#david")
 davidbut.addEventListener("click", event => {
     console.log(davidbut.textContent)
+}, {
+    once: true
 })
 
 setWelcomeMessage("Daarla")
