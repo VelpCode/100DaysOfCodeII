@@ -6,6 +6,7 @@ username.addEventListener("blur", () => {
         username.classList.add("success")
     }
     else {
-        username
+        username.classList.remove("success");
+        username.classList.add("error")
     }
 })
