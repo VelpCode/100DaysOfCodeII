@@ -20,5 +20,6 @@ const otherFunc = {
 const humanObj = {
     ears: "Big",
     nose: "Wide",
-    Lungs:
+    Lungs: "Unhealthy",
+    Weight: "Normal"
 }
