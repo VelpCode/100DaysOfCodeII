@@ -10,6 +10,9 @@ export default translations;
 
 const otherFunc = {
     object : {
-        car: "Volkswaggon";
+        car: "Volkswaggon",
+        human: "David",
+        camera: "Polaroid",
+        food: "Chicken"
     }
 }
