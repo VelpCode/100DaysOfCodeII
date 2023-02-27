@@ -6,3 +6,10 @@ const translations = {
     }
 }
 export default translations;
+
+
+const otherFunc = {
+    object : {
+        car: "Volkswaggon";
+    }
+}
