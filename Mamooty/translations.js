@@ -16,3 +16,9 @@ const otherFunc = {
         food: "Chicken"
     }
 }
+
+const humanObj = {
+    ears: "Big",
+    nose: "Wide",
+    Lungs:
+}
