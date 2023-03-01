@@ -1,13 +1,10 @@
-const sayHello = () => {
-    console.log("Hello!");
+const getUsers = () => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
 }
 
-console.log("Step 1");
-try {
-    sayHello();
-    console.log("Step 2");
-} catch (error) {
-    console.log("Step 3");
-    console.error(error);
-}
-console.log("Step 4");
+// Sample usage
+getUsers();
