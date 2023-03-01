@@ -1,11 +1,12 @@
 
+/*Visualize async function, Run the code and see how the getRandomNumber 
+function returns a random number between 0 and 9 */
 
-const getUsers = async () => {
-
-    const response = await
-    fetch("https://jsonplaceholder.typicode.com/users")
-    const data = await response.json
-    console.log(data)
-
+const getRandomNumber = async () => {
+    const randomNumber = Math.floor(Math.random() * 10);
+    return randomNumber;
 }
 
+getRandomNumber().then(value => {
+    console.log(value);
+})
