@@ -1,22 +1,13 @@
+import {fakeFetch} from "./helpers.js";
 
-
-const failedPromise = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            reject("Something went wrong")
-        }, 500);
-    })
-}
-
-
-const init = async () => {
+const logUserDetails = async () => {
     try {
-        const result = await failedPromise();
-        console.log("You will never see me");
+        
+        const data = await fakeFetch("user-details")
+        console.log(data)
     } catch(error) {
-        console.log("There was an error")
-        console.log(error);
+        console.error(error)
     }
 }
 
-init();
+logUserDetails();
