@@ -15,6 +15,14 @@ const getTweetDetails = () => {
             container-type: "FULL".charAt.
         }
     }
+    API.put('tweetmentioned.json', {
+        method: "put",
+        firstName = firstName,
+        lastName = lastName,
+        body {
+            
+        }
+    })
     )
 }
 
