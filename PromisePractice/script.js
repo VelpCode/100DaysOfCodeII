@@ -10,4 +10,9 @@ const logUserDetails = async () => {
     }
 }
 
+
+document.querySelector("user-details")
+
+
+
 logUserDetails();
