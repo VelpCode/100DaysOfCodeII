@@ -4,3 +4,7 @@ const username = document.querySelector("#user-name")
         console.log("event clicked")
     })
     
+
+document.querySelector("a")
+
+
