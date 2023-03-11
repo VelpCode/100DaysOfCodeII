@@ -1,12 +1,6 @@
 const username = document.querySelector("#user-name")
 
-username.addEventListener("blur", () => {
-    if (username.value.length >= 6) {
-        username.classList.remove("error")
-        username.classList.add("success")
-    }
-    else {
-        username.classList.remove("success");
-        username.classList.add("error")
-    }
-})
+    username.addEventListener("click", () => {
+        console.log("event clicked")
+    })
+    
